@@ -1,0 +1,42 @@
+@import "./../../sass/variables.scss";
+.manage-views {
+  width: 65vw;
+  max-width: 100%;
+  margin: auto;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  color: $manageviews-header-font-color;
+  height: 90vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  &__header {
+    background-color: $manageviews-header-background-color;
+    width: 100%;
+    padding: 1.4rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    max-height: 7rem;
+
+    .small-icon {
+      margin-left: 1rem;
+      font-size: 2.5rem;
+      font-weight: 800;
+      cursor: pointer;
+      &.close-icon {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+      }
+    }
+    .title {
+      display: inline-block;
+      font-size: 1.8rem;
+      font-weight: 650;
+      margin: 0;
+      margin-left: 2rem;
+    }
+  }
+}

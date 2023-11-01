@@ -1,0 +1,24 @@
+.container {
+  background-color: #fff;
+  overflow-y: scroll;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container::-webkit-scrollbar {
+  width: 0.5rem; /* Set the width of the scrollbar */
+  cursor: pointer;
+}
+
+.container::-webkit-scrollbar-track {
+  background: red; /* Set the color of the track */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the scrollbar handle */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar handle on hover */
+}
