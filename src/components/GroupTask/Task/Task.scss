@@ -5,6 +5,7 @@
   border-radius: 0.3rem;
   display: flex;
   background-color: #fff;
+  cursor: pointer;
   &__actions,
   &__edit_delete {
     padding: 1rem;
@@ -23,14 +24,20 @@
     .content-text {
       grid-area: content-text;
       display: block;
-      width: calc(100% - 40rem);
+      width: calc(100% - 10rem);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
     }
   }
   &__edit_delete {
+    display: flex;
+    gap: 1rem;
     padding: 1rem;
+  }
+  &.hidden {
+    opacity: 0.5;
+    color: black;
   }
 }
 .icons {
